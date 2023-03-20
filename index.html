@@ -92,7 +92,11 @@
             </div>
             <div class="row">
                 <div class="col s12">
-                    <div class="carousel carousel-slider">
+                    <div id="carousel" class="carousel carousel-slider">
+                        <div class="carousel-fixed-item center">
+                            <button onclick="toggleSlide('left')" id="carousel-left" class="btn waves-effect white grey-text darken-text-2"><i class="material-icons">arrow_back</i></button>
+                            <button onclick="toggleSlide('right')" id="carousel-right" class="btn waves-effect white grey-text darken-text-2"><i class="material-icons">arrow_forward</i></button>
+                        </div>
                         <a class="carousel-item" href="#one!"><img cl src="images/1.jpg"></a>
                         <a class="carousel-item" href="#two!"><img src="images/2.jpg"></a>
                         <a class="carousel-item" href="#three!"><img src="images/3.jpg"></a>
