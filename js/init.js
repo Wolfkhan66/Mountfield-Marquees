@@ -1,15 +1,18 @@
 (function($){
   $(function(){
 
-    $('.sidenav').sidenav();
+     $('.sidenav').sidenav();
       $('.parallax').parallax();
       $('.carousel.carousel-slider').carousel({
-          fullWidth: true    });
+          fullWidth: true,
+          indicators: true
+      });
+      $('.materialboxed').materialbox();
   }); // end of document ready
 })(jQuery); // end of jQuery name space
 
 
-const map = L.map('map').setView([51.505, -0.09], 13);
+const map = L.map('map').setView([50.985538, 0.472921], 13);
 
 const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
@@ -24,6 +27,5 @@ function toggleSlide(direction) {
         instance.prev(); 
     } else {
         instance.next(); 
-
     }
 }
